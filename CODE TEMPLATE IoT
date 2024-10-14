@@ -1,0 +1,25 @@
+#define BLYNK_TEMPLATE_ID "sesuaikan template ID masing - masing dari blynk"
+#define BLYNK_TEMPLATE_NAME "sesuaikan template name dari blynk"
+#define BLYNK_AUTH_TOKEN "Ganti sesuai token yang didapatkan dari blynk"
+
+#include<WiFi.h>
+#include<BlynkSimpleEsp32.h>
+
+#define pin_led 23
+
+
+#define AUTH BLYNK_AUTH_TOKEN
+#define WIFI_AP "Wokwi-GUEST"
+#define WIFI_PASS ""
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+
+}
+
+void loop() {
+  Blynk.run();
+}
